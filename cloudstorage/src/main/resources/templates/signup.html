@@ -15,7 +15,8 @@
             <br>
             <h1 th:unless="err">Ok, now login</h1>
             <h1 th:unless="succ">Error</h1>
-            <form action="#" method="POST">
+            <form th:action="@{/signup}"
+ action="#" method="POST">
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputFirstName">First Name</label>
