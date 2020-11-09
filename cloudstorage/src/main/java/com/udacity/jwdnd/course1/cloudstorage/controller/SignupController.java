@@ -6,10 +6,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.*;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.beans.factory.annotation.Autowired;
+
 
 @Controller
 @RequestMapping("/signup")
 public class SignupController {
+    @Autowired
     private UserService userService;
 
     @GetMapping
