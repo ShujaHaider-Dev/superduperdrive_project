@@ -13,8 +13,8 @@
             <h1 class="display-5">Sign Up</h1>
             <a th:href="@{/login}">Back to login</a>
             <br>
-            <h1 th:unless="err">Ok, now login</h1>
-            <h1 th:unless="succ">Error</h1>
+           <h1 th:if="${succ}">Ok, now login</h1>
+            <h1 th:if="${err}">Error</h1>
             <form th:action="@{/signup}"
  action="#" method="POST">
                 <div class="form-row">
